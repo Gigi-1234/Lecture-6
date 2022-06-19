@@ -1,0 +1,85 @@
+body {
+    height: 2000px;
+    background-image: url(../css/img/road.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ .animation {
+	width: 10%;
+	height: 90px;
+	background-color: #00b3b3;
+	margin: 0 auto;
+	border-style: solid; 
+	position: relative;  
+}
+
+.model {
+	width: 150px;
+	height: 100px;
+	z-index: 1;
+	position: absolute;
+	transform: translate(0px,500px);
+	animation: model 20s infinite;
+}
+@keyframes model {
+	from {left: 0px}
+	to {left: 700px}
+}
+.container {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.mama {
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+
+#p1 {
+	width: 100px;
+	height: 100px;
+	background: green;
+	font-size: 35px;
+	text-align: center;
+	margin: opx;
+
+	animation: mycoloranimation;
+	animation: myrotateanimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+  
+  @keyframes mycoloranimation {
+  	 0%{background-color: red}
+  	 10%{background-color: blue;}
+  	 30%{background-color: orange;}
+  	 60%{background-color: green;}
+  	 100%{background-color: purple;}
+
+
+  }
+
+   @keyframes myrotateanimation {
+   	100%{transform: rotateZ(360deg);}
+   }
+   
+   @keyframes mytranslate {
+
+   }
+
+  div {
+  	width: 100px;
+  	height: 100px;
+  	background: blue;
+  	position: relative;
+  	animation: mymove 5s infinite;
+  }
+
+  @keyframes mymove {
+  	from {top: 0px;}
+  	to {top: 50px;}
+  }
